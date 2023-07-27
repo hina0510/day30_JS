@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	let name =prompt("당신의 이름은?");
+	let age =prompt("당신의 나이는?");
+	let addr =prompt("당신의 주소는?");
+	document.write("이름은 "+name+"나이는 "+age+"주소는 "+addr+"입니다<br>");
+	document.write(`이름은 ${name} 나이는 ${age} 주소는 ${addr}입니다<br>`);
+	
+	document.write(`<table border="1">`);
+	document.write(`<tr>
+			<th>이름</th>
+			<th>나이</th>
+			<th>주소</th>
+		</tr>`);
+	document.write(`<tr>
+			<td>${name}</td>
+			<td>${age}</td>
+			<td>${addr}</td>
+		</tr>`);
+	document.write(`<tr>
+			<td>${name}</td>
+			<td>${age}</td>
+			<td>${addr}</td>
+		</tr>`);
+	document.write(`</table><hr>`);
+	
+</script>
+
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<th>이름</th>
+			<th>나이</th>
+			<th>주소</th>
+		</tr>
+		<tr>
+			<td><script>document.write(name)</script></td>
+			<td><script>document.write(age)</script></td>
+			<td><script>document.write(addr)</script></td>
+		</tr>
+		<tr>
+			<td><script>document.write(name)</script></td>
+			<td><script>document.write(age)</script></td>
+			<td><script>document.write(addr)</script></td>
+		</tr>
+	</table>
+</body>
+</html>
